@@ -11,7 +11,7 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
     const data = [];
 
     for (let i = 0; i <= intervals; i++) {
-        const time = (t / intervals) * i;
+        const time = (t*2 / intervals) * i;
         const s = u * time + 0.5 * a * time * time;
         data.push({ x: time, y: s });
     }
